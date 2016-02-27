@@ -1,0 +1,33 @@
+La práctica se ha realizado en Windows 7 Ult, 
+Comandos utilizados:
+
+
+
+
+1) Compilar código: javac -verbose -d ./classes ./src/*.java
+
+
+2) Generar documentación: javadoc -author -version -linksource -private -d doc src/*.java
+
+3) Ejecutar Clase MainTicTacToe: java -classpath classes/ MainTicTacToe
+
+4) Para incluir las clases en el paquete, se añade "package es.unileon.prg1.ticTacToe;" al principio de todos los archivos .java contenidos en src
+
+Creamos el directorio para el paquete
+
+mkdir src\es\unileon\prg1\ticTacToe
+
+Movemos los .java:
+
+move src\*.java src\es\unileon\prg1\ticTacToe
+
+5)Para compilar desde el directorio: javac -d ./classes/ ./src/es/unileon/prg1/ticTacToe/*.java
+
+6)Generar documentación desde el directorio de trabajo: javadoc -author -version -linksource -private -d doc src/es/unileon/prg1/ticTacToe/*.java
+
+7)Ejecutar desde el directorio: java -classpath classes/ es.unileon.prg1.ticTacToe.MainTicTacToe
+
+8)Incluir imagenes:
+  
+	Primero creamos el directorio: mkdir etc\images
+	Despues movemos los archivos al directorio.
